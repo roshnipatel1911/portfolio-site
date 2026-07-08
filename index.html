@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roshni Patel | DevOps Engineer</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1a2b4c;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(135deg, #0b3d91, #1e5fbf);
+    color: white;
+    padding: 80px 20px 60px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  header p {
+    font-size: 1.2em;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-top: 18px;
+    font-size: 0.9em;
+  }
+  section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  h2 {
+    color: #0b3d91;
+    border-bottom: 3px solid #1e5fbf;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+  }
+  .skill-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(11,61,145,0.08);
+    border-top: 4px solid #1e5fbf;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+  }
+  .skill-card:hover {
+    transform: translateY(-5px);
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .project-card {
+    background: white;
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 0 2px 8px rgba(11,61,145,0.08);
+    border-left: 5px solid #1e5fbf;
+  }
+  .project-card h3 {
+    color: #0b3d91;
+    margin-bottom: 8px;
+  }
+  .project-card .tools {
+    margin-top: 12px;
+    font-size: 0.85em;
+    color: #1e5fbf;
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    padding: 30px;
+    color: #6b7a99;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Roshni Patel</h1>
+  <p>Aspiring DevOps Engineer transitioning from Physiotherapy Education to Cloud Infrastructure & Automation</p>
+  <span class="badge">📍 Dubai, UAE</span>
+</header>
+
+<div class="skill-card">Terraform</div>
+<section>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card">Ansible</div>
+    <div class="skill-card">Jenkins</div>
+    <div class="skill-card">Docker</div>
+    <div class="skill-card">AWS</div>
+    <div class="skill-card">Kubernetes</div>
+    <div class="skill-card">Linux</div>
+    <div class="skill-card">Git</div>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <h3>Cloud-Native Blogging Platform</h3>
+      <p>Provisioned a multi-tier AWS architecture with a custom VPC, public/private subnets, and NAT Gateway. Automated server configuration with Ansible and built a Jenkins CI/CD pipeline for containerized deployment.</p>
+      <div class="tools">Terraform · Ansible · Jenkins · Docker · AWS</div>
+    </div>
+    <div class="project-card">
+      <h3>Portfolio Site with Auto-Deploy</h3>
+      <p>Built and deployed this very site using a full CI/CD pipeline — every push to GitHub automatically triggers a Jenkins build that redeploys the live site, with zero manual steps.</p>
+      <div class="tools">Terraform · Jenkins · GitHub Webhooks · Nginx</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Built and deployed with Terraform, Jenkins & AWS · roshnipatel1911
+</footer>
+
+</body>
+</html>

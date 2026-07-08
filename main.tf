@@ -37,16 +37,12 @@ resource "aws_instance" "web" {
     instance_type = "t3.micro"
     security_groups = [aws_security_group.web_sg.name]
     key_name = "PRTKEY"
-    user_data = <<-EOF
-              #!/bin/bash
-              apt update -y
-              apt install -y nginx
-              systemctl start nginx
-              systemctl enable nginx
-              echo "<h1>Roshni Patel</h1><p>Aspiring DevOps Engineer | Physiotherapy background | Dubai</p><p>Skills: Terraform, Ansible, Jenkins, Docker, AWS, Kubernetes</p>" > /var/www/html/index.html
-              EOF
-
-
+    
+    root_block_device {
+        volume_size = 20 
+        volume_type = "gp3"
+    }
+    
     tags = {
         Name = "portfolio-server"
     }
